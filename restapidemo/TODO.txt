@@ -1,0 +1,8 @@
+[x] API Doc with Swagger.
+[x] XML format.
+[x] CSV format.
+[x] Spring Cache.
+[x] Spring Boot log: clean console without logs.
+[ ] Spring Security.
+[ ] Spring Boot log: Use logback.xml instead of application.properties.
+[ ] H2.

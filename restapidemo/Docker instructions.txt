@@ -1,0 +1,45 @@
+1. Create the file Dockerfile inside the project's folder
+https://docs.docker.com/engine/reference/builder/
+
+2. Create a image from the Java application
+docker build -t restapidemo .
+https://docs.docker.com/engine/reference/commandline/build/
+
+3. Launch the created image with a container
+docker run d- -p 8080:8080 restapidemo
+or
+docker run -p 8080:8080 restapidemo
+https://docs.docker.com/engine/reference/run/
+
+4. Get the docker IP
+docker-machine ip
+https://docs.docker.com/machine/reference/ip/
+
+5. Access to the API documentation
+http://{ip}:8080/restapidemo/swagger-ui.html
+https://springfox.github.io/springfox/docs/current/#springfox-swagger-ui
+
+6. Test the Java application with Postman using the API documentation
+https://www.getpostman.com/docs/v6/postman/sending_api_requests/requests
+
+---
+
+7. Create a repository at Docker Hub
+https://hub.docker.com/
+
+8. Docker Quickstart Login
+docker login --username=luisgomezcaballero
+
+7. List images and get identifier
+docker images
+
+8. Tag image
+docker tag {id} luisgomezcaballero/restapidemo:v1
+
+9. Upload tagged image to repository
+docker push luisgomezcaballero/restapidemo
+
+---
+
+10. Download from Docker Hub and launch
+docker run -p 8080:8080 luisgomezcaballero/restapidemo:v1
